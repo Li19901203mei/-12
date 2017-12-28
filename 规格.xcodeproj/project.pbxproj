@@ -15,6 +15,7 @@
 		00BBCB1F1FF4E75A009AC432 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BBCB1E1FF4E75A009AC432 /* main.m */; };
 		00BBCB291FF4E75A009AC432 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BBCB281FF4E75A009AC432 /* __Tests.m */; };
 		00BBCB341FF4E75A009AC432 /* __UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BBCB331FF4E75A009AC432 /* __UITests.m */; };
+		DF6EC692192884EE625738CB /* libPods-规格.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4823C5FB52AF522B533DE4E2 /* libPods-规格.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		00BBCB2F1FF4E75A009AC432 /* 规格UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "规格UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00BBCB331FF4E75A009AC432 /* __UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __UITests.m; sourceTree = "<group>"; };
 		00BBCB351FF4E75A009AC432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E42989C2C07B0B2EE609804 /* Pods-规格.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-规格.release.xcconfig"; path = "Pods/Target Support Files/Pods-规格/Pods-规格.release.xcconfig"; sourceTree = "<group>"; };
+		4823C5FB52AF522B533DE4E2 /* libPods-规格.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-规格.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E8E40AF1CF26071BB2E036 /* Pods-规格.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-规格.debug.xcconfig"; path = "Pods/Target Support Files/Pods-规格/Pods-规格.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF6EC692192884EE625738CB /* libPods-规格.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				00BBCB271FF4E75A009AC432 /* 规格Tests */,
 				00BBCB321FF4E75A009AC432 /* 规格UITests */,
 				00BBCB0D1FF4E75A009AC432 /* Products */,
+				0DBCB7DE14C36513AEEB2F14 /* Pods */,
+				E744FD04A5638978C3487C0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +139,23 @@
 			path = "规格UITests";
 			sourceTree = "<group>";
 		};
+		0DBCB7DE14C36513AEEB2F14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7E8E40AF1CF26071BB2E036 /* Pods-规格.debug.xcconfig */,
+				0E42989C2C07B0B2EE609804 /* Pods-规格.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E744FD04A5638978C3487C0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4823C5FB52AF522B533DE4E2 /* libPods-规格.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00BBCB381FF4E75A009AC432 /* Build configuration list for PBXNativeTarget "规格" */;
 			buildPhases = (
+				47F92998F26B97D0B05D988C /* [CP] Check Pods Manifest.lock */,
 				00BBCB081FF4E75A009AC432 /* Sources */,
 				00BBCB091FF4E75A009AC432 /* Frameworks */,
 				00BBCB0A1FF4E75A009AC432 /* Resources */,
+				FC1A4A3B392E4C1539E2804B /* [CP] Embed Pods Frameworks */,
+				3125472399B6423DDAE56C68 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +286,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3125472399B6423DDAE56C68 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-规格/Pods-规格-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47F92998F26B97D0B05D988C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-规格-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC1A4A3B392E4C1539E2804B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-规格/Pods-规格-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		00BBCB081FF4E75A009AC432 /* Sources */ = {
@@ -428,28 +506,34 @@
 		};
 		00BBCB391FF4E75A009AC432 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7E8E40AF1CF26071BB2E036 /* Pods-规格.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3QS66793N5;
+				DEVELOPMENT_TEAM = LZVDT84T42;
 				INFOPLIST_FILE = "规格/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.weiyankeji.--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		00BBCB3A1FF4E75A009AC432 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E42989C2C07B0B2EE609804 /* Pods-规格.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3QS66793N5;
+				DEVELOPMENT_TEAM = LZVDT84T42;
 				INFOPLIST_FILE = "规格/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.weiyankeji.--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
